@@ -1,0 +1,1 @@
+Basic nestjs template for demo and educational purposes.
