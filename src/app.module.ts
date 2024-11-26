@@ -17,6 +17,8 @@ import { User } from './user/models/user.model';
       username: 'user',
       password: 'secret',
       database: 'test_db',
+      autoLoadModels: true,
+      synchronize: true,
       models: [User],
     }),
     UserModule,

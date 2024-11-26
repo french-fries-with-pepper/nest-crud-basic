@@ -20,4 +20,17 @@ export class UserProvider {
       },
     });
   }
+
+  async onModuleInit() {
+    /*  const tmpUser = {
+      firstName: 'Morgan',
+      lastName: 'Peterson',
+      isActive: true,
+    };
+    await this.userModel.create(tmpUser);
+    console.log('created'); */
+
+    const result = await this.userModel.findAll();
+    console.log(result);
+  }
 }
